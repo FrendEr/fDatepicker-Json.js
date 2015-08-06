@@ -1,0 +1,36 @@
+var json = [{
+	"date": "2015-08-09",
+	"currency": "$",
+	"price": "1923",
+	"quota": 0
+}, {
+	"date": "2015-08-12",
+	"currency": "$",
+	"price": "1923",
+	"quota": 10
+}, {
+	"date": "2015-08-16",
+	"currency": "$",
+	"price": "1923",
+	"quota": 2
+}, {
+	"date": "2015-08-23",
+	"currency": "$",
+	"price": "1923",
+	"quota": 0
+}, {
+	"date": "2015-08-26",
+	"currency": "$",
+	"price": "1923",
+	"quota": 0
+}, {
+	"date": "2015-08-30",
+	"currency": "$",
+	"price": "1923",
+	"quota": 0
+}, {
+	"date": "2015-09-03",
+	"currency": "$",
+	"price": "1923",
+	"quota": 0
+}];
