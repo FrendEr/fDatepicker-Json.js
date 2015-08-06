@@ -13,7 +13,7 @@
  *  @author      Frend
  *  @version     1.0.0
  *  @dependency  jQuery
- *  @github      https://github.com/FrendEr/fDatepicker.js
+ *  @github      https://github.com/FrendEr/fDatepicker-Json.js
  *
  * ======================================================= */
 
