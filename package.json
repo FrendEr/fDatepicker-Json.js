@@ -1,0 +1,34 @@
+{
+  "name": "fdatepicker-json.js",
+  "version": "1.0.0",
+  "description": "支持后台渲染后台数据的移动端满屏日历插件，支持单个月份切换和多个月份平铺展示两种方式。使用多月份平铺展示时，支持初始化加载个数、分页加载。",
+  "main": "fDatepicker.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FrendEr/fDatepicker-Json.js.git"
+  },
+  "keywords": [
+    "datepicker",
+    "date",
+    "calendar",
+    "frend"
+  ],
+  "author": "Frend <frend.wong@gmail.com> (http://frend.cc)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrendEr/fDatepicker-Json.js/issues"
+  },
+  "homepage": "https://github.com/FrendEr/fDatepicker-Json.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
