@@ -1,12 +1,12 @@
 {
-  "name": "fDatepicker.js",
+  "name": "fDatepicker-Json.js",
   "version": "1.0.0",
-  "homepage": "https://github.com/FrendEr/fDatepicker.js",
+  "homepage": "https://github.com/FrendEr/fDatepicker-Json.js",
   "authors": [
     "FrendEr <frend.wong@gmail.com>"
   ],
-  "description": "移动端满屏日历插件，支持单个月份切换和多个月份平铺展示两种方式。使用多月份平铺展示时，支持初始化加载个数、分页加载。",
-  "main": "fDatepicker.js",
+  "description": "持后台渲染后台数据的移动端满屏日历插件，支持单个月份切换和多个月份平铺展示两种方式。使用多月份平铺展示时，支持初始化加载个数、分页加载。 目前供需要展示价格、库存的业务线使用。",
+  "main": "fDatepicker-Json.js",
   "keywords": [
     "datepicker",
     "calendar",
