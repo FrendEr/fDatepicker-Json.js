@@ -79,7 +79,7 @@
         $(window).on('scroll', $.proxy(this.scrollLoad, this));
 
         // init select event
-        this.$container.on('click', 'span[data-date]', $.proxy(this.initEvents, this));
+        this.$container.on('click', '.is-quota-valid', $.proxy(this.initEvents, this));
 
         // init month exchange event
         if (this.singleFrame) {
@@ -354,7 +354,7 @@
                         className += ' is-weekend';
                     }
 
-                    tmp += '<span class="' + className + '" data-date="' + arr[i] + '"><i>' + itemDate + '</i>' + ((className.indexOf('has-quota') > -1) ? ('<em class="datepicker-price">' + dateObj.currency + dateObj.price + '</em><em class="datepicker-quota">库存' + dateObj.quota + '</em>') : '') + '</span>';
+                    tmp += '<span class="' + className + '" data-date="' + arr[i] + '"><i>' + itemDate + '</i>' + ((className.indexOf('has-quota') > -1) ? ('<em class="datepicker-price">' + dateObj.currency + dateObj.price + '</em><em class="datepicker-quota ' + (dateObj.quota > 10 ? 'full-quota' : 'poor-quota') + '">' + '</em>') : '') + '</span>';
                 })(i);
             }
 
