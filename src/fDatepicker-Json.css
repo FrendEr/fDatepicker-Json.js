@@ -130,3 +130,16 @@
     line-height: 10px;
     /*font-size: @font-size-smallest;*/
 }
+.datepicker-table .not-instant-confirm .datepicker-quota {
+    display: none;
+}
+.datepicker-table .not-instant-confirm:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(http://quimg.com/m/assets/src/img/plugins/datepicker/not-instant-confirm.png);
+    background-size: 25px auto;
+}

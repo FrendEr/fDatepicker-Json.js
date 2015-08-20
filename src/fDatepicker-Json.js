@@ -349,6 +349,8 @@
                     // is quota > 0
                     dateObj = (className.indexOf('has-quota') > -1) ? self.getDateObj(dateJson, formatedDate) : null;
                     className += (className.indexOf('has-quota') > -1) ? (parseInt(dateObj.quota) > 0 ? ' is-quota-valid' : '') : '';
+                    // is instant confirm
+                    className += (dateObj && dateObj.instant_confirm) ? ' not-instant-confirm' : '';
 
                     if (i % 7 == 0 || i % 7 == 6) {
                         className += ' is-weekend';

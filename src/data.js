@@ -2,45 +2,54 @@ var json = [{
 	"date": "2015-08-23",
 	"currency": "$",
 	"price": "1923",
-	"quota": 20
+	"quota": 20,
+	"instant_confirm": true
 }, {
 	"date": "2015-08-24",
 	"currency": "$",
 	"price": "1923",
-	"quota": 0
+	"quota": 0,
+	"instant_confirm": false
 }, {
 	"date": "2015-08-25",
 	"currency": "$",
 	"price": "1923",
-	"quota": 12
+	"quota": 12,
+	"instant_confirm": true
 }, {
 	"date": "2015-08-26",
 	"currency": "$",
 	"price": "1923",
-	"quota": 3
+	"quota": 3,
+	"instant_confirm": false
 }, {
 	"date": "2015-08-27",
 	"currency": "$",
 	"price": "1923",
-	"quota": 5
+	"quota": 5,
+	"instant_confirm": false
 }, {
 	"date": "2015-08-30",
 	"currency": "$",
 	"price": "1923",
-	"quota": 30
+	"quota": 30,
+	"instant_confirm": false
 }, {
 	"date": "2015-09-03",
 	"currency": "$",
 	"price": "1923",
-	"quota": 50
+	"quota": 50,
+	"instant_confirm": false
 }, {
 	"date": "2015-09-04",
 	"currency": "$",
 	"price": "1923",
-	"quota": 1
+	"quota": 1,
+	"instant_confirm": false
 }, {
 	"date": "2015-09-05",
 	"currency": "$",
 	"price": "1923",
-	"quota": 6
+	"quota": 6,
+	"instant_confirm": false
 }];
