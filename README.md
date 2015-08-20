@@ -132,4 +132,6 @@ npm install fdatepicker-json.js [--save[-dev]]
 
 ## Version
 
+- **1.0.1**
+
 - **1.0.0**
