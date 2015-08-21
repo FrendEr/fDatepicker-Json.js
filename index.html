@@ -22,20 +22,6 @@
 				font-size: 20px;
 				z-index: 100;
 			}
-			#dateTips {
-				position: fixed;
-				bottom: 20px;
-				right: 20px;
-				border-radius: 5px;
-				padding: 0 10px;
-				height: 40px;
-				line-height: 40px;
-				text-align: center;
-				color: #fff;
-				font-size: 14px;
-				background-color: rgba(0, 0, 0, .8);
-				font-family: sans-serif;
-			}
 		</style>
 	</head>
 	<body>
@@ -43,7 +29,6 @@
 			<p>fDatepicker-Json.js</p>
 		</header>
 		<div id="container"></div>
-		<span id="dateTips">2015/8/21</span>
 		<script src="./bower_components/jquery/dist/jquery.js"></script>
 		<script src="./bower_components/underscore/underscore-min.js"></script>
 		<script src="./src/data.js"></script>
@@ -51,16 +36,16 @@
 		<script type="text/javascript">
 		var datepicker = new Datepicker({
 			container: '#container',
-			initDate: new Date('2015/8/21'),
-			startDate: new Date('2015/8/3'),
+			// initDate: new Date('2015/8/23'),
+			startDate: new Date('2015/8/21'),
 			endDate: new Date('2016/8/3'),
-			singleFrame: true,
-			//initFrame: 4,
-			//loadFrames: 3,
-	        //loadOffset: 60,
+			// singleFrame: true,
+			initFrame: 4,
+			loadFrames: 3,
+	        loadOffset: 60,
 			dateJson: json,
 	        selectCallback: function(date) {
-		        $('#dateTips').html(date);
+		        console.log(date);
 	        }
 		});
 		</script>

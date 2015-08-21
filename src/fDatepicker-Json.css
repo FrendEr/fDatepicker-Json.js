@@ -7,15 +7,19 @@
     overflow: hidden;
     text-align: center;
     font-size: 14px;
-    color: #333;
+    color: #c7c7c7;
+    /*color: @gray-lighter;*/
     width: 100%;
-    border-bottom: 1px solid #f1f1f1;
     margin-bottom: 20px;
 }
 .datepicker-table .datepicker-header {
     position: relative;
-    height: 40px;
-    line-height: 40px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    color: #05b47a;
+    /*color: @green-base;*/
+    /*font-size: @font-size-large;*/
 }
 .datepicker-header i {
     position: absolute;
@@ -40,51 +44,102 @@
 .datepicker-table span {
     position: relative;
     float: left;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     width: 14.28%;
-    border: 1px solid transparent;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    /*border-bottom: 1px solid @gray-lightest;
+    border-right: 1px solid @gray-lightest;*/
 }
 .datepicker-table span i {
     font-family: verdana;
     display: block;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     border-radius: 50%;
-    margin: 3px auto 0 auto;
+    margin: 0 auto;
+    font-style: normal;
 }
 .datepicker-table .dp-th {
     font-weight: bold;
+    font-size: 14px;
+    /*font-size: @font-size-base;*/
+    color: #636363;
+    /*color: @gray-light;*/
+    height: 20px;
+    line-height: 20px;
     background-color: #f1f1f1;
+    /*background-color: @gray-lightest;*/
 }
 .datepicker-table .is-today i {
-    background-color: #eb4747;
-    color: #fff;
+    display: none;
+}
+.datepicker-table .is-today:after {
+    content: "今天";
+    display: block;
+    color: #c7c7c7;
+    height: 30px;
+    line-height: 30px;
+    /*color: @gray-lighter;*/
 }
 .datepicker-table .is-weekend {
-    color: #eb4747;
+    /*color: #eb4747;*/
 }
 .datepicker-table .is-outdate {
-    color: #ddd;
+    color: #c7c7c7;
+    /*color: @gray-lighter;*/
 }
 .datepicker-table .selected {
-    background-color: #eee;
+    background-color: #9be1ca;
 }
-.datepicker-table .has-quota {
-    border-bottom: 2px solid #f08300;
+.datepicker-table .selected i, .datepicker-table .selected em {
+    color: #fff;
+}
+.datepicker-table .has-quota em {
+    display: none;
 }
 .datepicker-table .is-quota-valid {
-
+    color: #333;
+    /*color: @gray-base;*/
 }
-.datepicker-table .datepicker-price, .datepicker-table .datepicker-quota {
+.datepicker-table .is-quota-valid em {
+    display: block;
+}
+.datepicker-table .datepicker-quota {
     position: absolute;
-    font-size: 12px;
-    color: #f08300;
-    line-height: 12px;
-    bottom: 0;
-    right: 5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 7px;
+    right: 8px;
+}
+.datepicker-quota.full-quota {
+    background-color: #4dcd25;
+}
+.datepicker-quota.poor-quota {
+    background-color: #f26d4e;
 }
 .datepicker-table .datepicker-price {
-    bottom: 13px;
+    display: block;
+    font-size: 12px;
+    color: #ffae00;
+    font-style: normal;
+    text-align: center;
+    line-height: 10px;
+    /*font-size: @font-size-smallest;*/
+}
+.datepicker-table .not-instant-confirm .datepicker-quota {
+    display: none;
+}
+.datepicker-table .not-instant-confirm:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(./not-instant-confirm.png);
+    background-size: 25px auto;
 }

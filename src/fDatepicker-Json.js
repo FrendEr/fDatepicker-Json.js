@@ -13,7 +13,7 @@
  *  @author      Frend
  *  @version     1.0.0
  *  @dependency  jQuery
- *  @github      https://github.com/FrendEr/fDatepicker.js
+ *  @github      https://github.com/FrendEr/fDatepicker-Json.js
  *
  * ======================================================= */
 
@@ -79,7 +79,7 @@
         $(window).on('scroll', $.proxy(this.scrollLoad, this));
 
         // init select event
-        this.$container.on('click', 'span[data-date]', $.proxy(this.initEvents, this));
+        this.$container.on('click', '.is-quota-valid', $.proxy(this.initEvents, this));
 
         // init month exchange event
         if (this.singleFrame) {
@@ -349,12 +349,14 @@
                     // is quota > 0
                     dateObj = (className.indexOf('has-quota') > -1) ? self.getDateObj(dateJson, formatedDate) : null;
                     className += (className.indexOf('has-quota') > -1) ? (parseInt(dateObj.quota) > 0 ? ' is-quota-valid' : '') : '';
+                    // is instant confirm
+                    className += (dateObj && dateObj.instant_confirm) ? ' not-instant-confirm' : '';
 
                     if (i % 7 == 0 || i % 7 == 6) {
                         className += ' is-weekend';
                     }
 
-                    tmp += '<span class="' + className + '" data-date="' + arr[i] + '"><i>' + itemDate + '</i>' + ((className.indexOf('has-quota') > -1) ? ('<em class="datepicker-price">' + dateObj.currency + dateObj.price + '</em><em class="datepicker-quota">库存' + dateObj.quota + '</em>') : '') + '</span>';
+                    tmp += '<span class="' + className + '" data-date="' + arr[i] + '"><i>' + itemDate + '</i>' + ((className.indexOf('has-quota') > -1) ? ('<em class="datepicker-price">' + dateObj.currency + dateObj.price + '</em><em class="datepicker-quota ' + (dateObj.quota > 10 ? 'full-quota' : 'poor-quota') + '">' + '</em>') : '') + '</span>';
                 })(i);
             }
 
